@@ -21,12 +21,12 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # See https://docs.djangoproject.com/en/5.1/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'django-insecure-%kxn3s851qyt=_3vo$mygx@x)@eyilv8+zt@&6mh#3u+qya+^w'
+SECRET_KEY = '#gg7!v!bc248f0vz@4#mf!ufhs1jy%pd6(bc$y1%7knlta**0e'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
-ALLOWED_HOSTS = ['*']
+ALLOWED_HOSTS = ['sistema-transmetro.onrender.com']
 
 
 # Application definition
