@@ -1,0 +1,65 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0;
+}
+.registration-container {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 1200px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+.registration-container h2 {
+    width: 100%;
+    margin-top: 0;
+    
+}
+.registration-container label {
+    display: block;
+    margin-top: 10px;
+}
+.registration-container input, 
+.registration-container select, 
+.registration-container textarea {
+    width: 100%;
+    padding: 7px;
+    margin-top: 5px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+.section {
+    flex: 1;
+    min-width: 300px;
+}
+.checkbox-container {
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+.checkbox-container input {
+    width: auto;
+    margin-right: 10px;
+}
+.registration-container button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+    margin-top: 20px;
+}
+.registration-container button:hover {
+    background-color: #0056b3;
+}

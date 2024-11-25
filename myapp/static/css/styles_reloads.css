@@ -1,0 +1,90 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    margin: 0;
+    height: 100vh;
+    background-color: #f0f0f0;
+}
+.sidebar {
+    width: 200px;
+    background-color: #333;
+    color: #fff;
+    padding: 15px;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+.sidebar a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 0;
+    border-bottom: 1px solid #444;
+}
+.sidebar a:hover {
+    background-color: #575757;
+}
+.container {
+    flex: 1;
+    padding: 20px;
+}
+.user-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.user-info img {
+    width: 50px;
+    height: 50px;
+}
+.user-info .details {
+    flex: 1;
+    margin-left: 20px;
+}
+.card-info {
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+.card-info h2 {
+    margin-top: 0;
+}
+.recharge-options {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+.recharge-option {
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    flex: 1;
+    cursor: pointer;
+}
+.recharge-option:hover {
+    background-color: #e0e0e0;
+}
+.recharge-option input {
+    width: 100%;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+.recharge-button {
+    background-color: #28a745;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    display: block;
+    margin: 0 auto;
+}
+.recharge-button:hover {
+    background-color: #218838;
+}

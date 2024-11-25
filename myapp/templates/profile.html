@@ -1,0 +1,46 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transmetro - Perfil de Usuario</title>
+    <link rel="stylesheet" href="{% static 'css/styles_profile.css' %}">
+</head>
+<body>
+    <div class="sidebar">
+        <h2>Navegación</h2>
+        <a href="/inicio">Inicio</a>
+        <a href="/reloads">Recargas</a>
+        <a href="/movements">Movimientos</a>
+        <a href="/routes">Rutas</a>
+        <a href="">Perfil</a>
+        <a href="/pqrs">PQRS</a>
+        <a href="/contactus">Contáctanos</a>
+        <a href="{% url 'index' %}">Cerrar Sesión</a>
+    </div>
+    <div class="container">
+        <div class="user-info">
+            <div class="details">
+                <h2>Rolman Rolman</h2>
+            </div>
+        </div>
+        <div class="profile-info">
+            <h2>Información del Usuario</h2>
+            <p><strong>Nombres:</strong> Rolman </p>
+            <p><strong>Apellidos:</strong> Ortega</p>
+            <p><strong>Teléfono:</strong> +57 987456123</p>
+            <p><strong>Correo:</strong> rolmanexample@gmail.com</p>
+            <p><strong>Género:</strong> MASCULINO</p>
+            <p><strong>Estado Civil:</strong> SOLTERO</p>
+            <p><strong>Tipo de Documento:</strong> CC</p>
+            <p><strong>Documento:</strong> 123456789</p>
+            <p><strong>Municipio:</strong> SOLEDAD</p>
+            <p><strong>Dirección:</strong> CALLE Juarez 17A</p>
+            <p><strong>Barrio:</strong> VILLA MUVDI</p>
+            <button>Cambiar Contraseña</button>
+            <button>Modificar Información</button>
+        </div>
+    </div>
+</body>
+</html>

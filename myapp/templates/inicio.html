@@ -1,0 +1,52 @@
+{% load static %} 
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transmetro - Gestión de Cuentas</title>
+    <link rel="stylesheet" href="{% static 'css/styles_inicio.css' %}">
+</head>
+<body>
+    <div class="sidebar">
+        <h2>Navegación</h2>
+        <a href="">Inicio</a>
+        <a href="/reloads">Recargas</a>
+        <a href="/movements">Movimientos</a>
+        <a href="/routes">Rutas</a>
+        <a href="/profile">Perfil</a>
+        <a href="/pqrs">PQRS</a>
+        <a href="/contactus">Contáctanos</a>
+        <a href="{% url 'index' %}">Cerrar Sesión</a>
+
+    </div>
+    <div class="container">
+        <div class="user-info">
+            <h2>Información del Usuario</h2>
+            <p><strong>Nombre:</strong> Rolman Rolman</p>
+            <p><strong>CC:</strong> 123456789</p>
+            <p><strong>Teléfono:</strong> +57 987456123</p>
+            <p><strong>Email:</strong> rolmanexample@gmail.com</p>
+            <p><strong>Dirección:</strong> Calle Juarez 17A</p>
+        </div>
+        <div class="payment-methods">
+            <h2>Métodos de Pago</h2>
+            <div class="payment-method">
+                <p><strong>Tipo de Tarjeta:</strong> TARJETA TRANSMETRO</p>
+                <p><strong>Número de Tarjeta:</strong> 0752449211</p>
+                <p><strong>Estado:</strong> ACTIVA</p>
+                <p><strong>Fecha de Registro:</strong> 01/09/2024</p>
+                <button>Acciones de la Tarjeta</button>
+            </div>
+            <div class="payment-method">
+                <p><strong>Tipo de Tarjeta:</strong> TARJETA TRANSMETRO</p>
+                <p><strong>Número de Tarjeta:</strong> 1006898858</p>
+                <p><strong>Estado:</strong> ACTIVA</p>
+                <p><strong>Fecha de Registro:</strong> 01/09/2024</p>
+                <button>Acciones de la Tarjeta</button>
+            </div>
+            <button>Agregar Medio de Pago +</button>
+        </div>
+    </div>
+</body>
+</html>

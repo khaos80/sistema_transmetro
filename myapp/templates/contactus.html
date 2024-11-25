@@ -1,0 +1,42 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transmetro - Contáctanos</title>
+    <link rel="stylesheet" href="{% static 'css/styles_contactus.css' %}">
+</head>
+<body>
+    <div class="sidebar">
+        <h2>Navegación</h2>
+        <a href="/inicio">Inicio</a>
+        <a href="/reload">Recargas</a>
+        <a href="/movements">Movimientos</a>
+        <a href="/routes">Rutas</a>
+        <a href="/profile">Perfil</a>
+        <a href="/pqrs">PQRS</a>
+        <a href="">Contáctanos</a>
+        <a href="{% url 'index' %}">Cerrar Sesión</a>
+    </div>
+    <div class="container">
+        <div class="user-info">
+            <div class="details">
+                <h2>Rolman Ortega</h2>
+            </div>
+        </div>
+        <div class="contact-info">
+            <h2>Contáctanos</h2>
+            <p>Si tienes alguna pregunta o necesitas asistencia, puedes contactarnos a través de los siguientes métodos:</p>
+            <ul class="contact-methods">
+                <li><strong>Email:</strong></li>
+                <li><a href="mailto:atencionalcliente@transmetro.gov.co">atencionalcliente@transmetro.gov.co</a></li>
+                <li><a href="mailto:info@transmetro.gov.co">info@transmetro.gov.co</a></li>
+                <li><strong>Teléfonos:</strong></li>
+                <li><a href="tel:3206359257">3206359257</a></li>
+                <li><a href="tel:+6053712222">(605) 3712222</a></li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>

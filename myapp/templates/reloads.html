@@ -1,0 +1,46 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transmetro - Recarga</title>
+    <link rel="stylesheet" href="{% static 'css/styles_reloads.css' %}">
+</head>
+<body>
+    <div class="sidebar">
+        <h2>Navegación</h2>
+        <a href="/inicio">Inicio</a>
+        <a href="">Recargas</a>
+        <a href="/movements">Movimientos</a>
+        <a href="/routes">Rutas</a>
+        <a href="/profile">Perfil</a>
+        <a href="/pqrs">PQRS</a>
+        <a href="/contactus">Contáctanos</a>
+        <a href="{% url 'index' %}">Cerrar Sesión</a>
+    </div>
+    <div class="container">
+        <div class="user-info">
+            <div class="details">
+                <h2>Rolman Rolman</h2>
+            </div>
+        </div>
+        <div class="card-info">
+            <h2>Tarjeta Transmetro</h2>
+            <p><strong>Número de Tarjeta:</strong> 0752449211</p>
+            <p><strong>Saldo Actual:</strong> $10,000</p>
+        </div>
+        <div class="recharge-options">
+            <div class="recharge-option">$5,000</div>
+            <div class="recharge-option">$10,000</div>
+            <div class="recharge-option">$15,000</div>
+            <div class="recharge-option">$20,000</div>
+            <div class="recharge-option">$50,000</div>
+            <div class="recharge-option">
+                <input type="number" placeholder="Otro valor">
+            </div>
+        </div>
+        <button class="recharge-button">RECARGAR</button>
+    </div>
+</body>
+</html>

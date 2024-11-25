@@ -1,0 +1,59 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transmetro - Rutas</title>
+    <link rel="stylesheet" href="{% static 'css/styles_routes.css' %}">
+
+</head>
+<body>
+    <div class="sidebar">
+        <h2>Navegación</h2>
+        <a href="/inicio">Inicio</a>
+        <a href="/reloads">Recargas</a>
+        <a href="/movements">Movimientos</a>
+        <a href="">Rutas</a>
+        <a href="/profile">Perfil</a>
+        <a href="/pqrs">PQRS</a>
+        <a href="/contactus">Contáctanos</a>
+        <a href="{% url 'index' %}">Cerrar Sesión</a>
+    </div>
+    <div class="container">
+        <div class="user-info">
+            <div class="details">
+                <h2>Rolman Rolman</h2>
+            </div>
+        </div>
+        <div class="route-selection">
+            <h2>Seleccione Ruta Alimentadora</h2>
+            <select>
+                <option value="A7-4">A7-4 LOS ANDES</option>
+                <option value="A7-1">A7-1 MIRAMAR</option>
+                <!-- Añade más opciones de rutas aquí -->
+            </select>
+            <button>FILTROS</button>
+        </div>
+        <div class="route-table">
+            <h2>Detalles de la Ruta</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Id. Bus</th>
+                        <th>Tipo</th>
+                        <th>Primer Servicio</th>
+                        <th>Último Servicio</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Aquí irán los detalles de los buses -->
+                </tbody>
+            </table>
+        </div>
+        <div class="footer-link">
+            <a href="#">Consultar Mapa de Ruta</a>
+        </div>
+    </div>
+</body>
+</html>

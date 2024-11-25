@@ -1,0 +1,62 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transmetro - Movimientos</title>
+    <link rel="stylesheet" href="{% static 'css/styles_movements.css' %}">
+</head>
+<body>
+    <div class="sidebar">
+        <h2>Navegación</h2>
+        <a href="/inicio">Inicio</a>
+        <a href="/reloads">Recargas</a>
+        <a href="">Movimientos</a>
+        <a href="/routes">Rutas</a>
+        <a href="/profile">Perfil</a>
+        <a href="/pqrs">PQRS</a>
+        <a href="/contactus">Contáctanos</a>
+        <a href="{% url 'index' %}">Cerrar Sesión</a>
+    </div>
+    <div class="container">
+        <div class="user-info">
+
+            <div class="details">
+                <h2>Rolman Ortega</h2>
+            </div>
+        </div>
+        <div class="card-info">
+            <h2>Tarjeta Transmetro</h2>
+            <p><strong>Número de Tarjeta:</strong> 0752449211</p>
+            <p><strong>Saldo Actual:</strong> $10,000</p>
+        </div>
+        <div class="movements-table">
+            <h2>Movimientos</h2>
+            <div class="filters">
+                <input type="text" placeholder="Buscar por Id. Movimiento">
+                <select>
+                    <option value="">Todos los Tipos</option>
+                    <option value="Recarga">Recarga</option>
+                    <option value="Gasto">Gasto</option>
+                </select>
+                <input type="date">
+            </div>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Id. Movimiento</th>
+                        <th>Fecha</th>
+                        <th>Tipo</th>
+                        <th>Valor</th>
+                        <th>Saldo</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Aquí irán los movimientos -->
+                </tbody>
+            </table>
+        </div>
+    </div>
+</body>
+</html>

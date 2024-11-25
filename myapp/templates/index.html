@@ -1,0 +1,30 @@
+{% load static %}
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transmetro</title>
+    <link rel="stylesheet" href="{% static 'css/styles_index.css' %}">
+</head>
+<body>
+    <div class="login-container">
+        <div class="map">
+            <img src="{% static 'TransmetroLogo.png' %}" alt= "Transmetro Map">
+        </div>
+        <div class="login-form">
+            <h2>INICIO DE SESION</h2>
+            <form action="{% url 'inicio' %}" method="post">
+                {% csrf_token %}
+                <input type="text" name="username" placeholder="Usuario o Email" required>
+                <input type="password" name="password" placeholder="Contraseña" required>
+                <button type="submit">INICIAR SESION</button>
+
+                <a href="/forgotPassword">Olvide mi contraseña</a>
+                <a href="/register">Registrarse en el sistema</a>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

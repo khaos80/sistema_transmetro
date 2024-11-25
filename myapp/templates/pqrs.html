@@ -1,0 +1,57 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transmetro - PQRS</title>
+    <link rel="stylesheet" href="{% static 'css/styles_pqrs.css' %}">
+    
+</head>
+<body>
+    <div class="sidebar">
+        <h2>Navegación</h2>
+        <a href="/inicio">Inicio</a>
+        <a href="/reloads">Recargas</a>
+        <a href="/movements">Movimientos</a>
+        <a href="/routes">Rutas</a>
+        <a href="/profile">Perfil</a>
+        <a href="">PQRS</a>
+        <a href="/contactus">Contáctanos</a>
+        <a href="{% url 'index' %}">Cerrar Sesión</a>
+    </div>
+    <div class="container">
+        <div class="user-info">
+            <div class="details">
+                <h2>Rolman Rolman</h2>
+            </div>
+        </div>
+        <div class="pqrs-form">
+            <h2>Generar Nueva PQRS</h2>
+            <form action="/submit-pqrs" method="post">
+                <label for="tipo-caso">Tipo de Caso</label>
+                <select id="tipo-caso" name="tipo-caso" required>
+                    <option value="Petición">Petición</option>
+                    <option value="Queja">Queja</option>
+                    <option value="Reclamo">Reclamo</option>
+                    <option value="Sugerencia">Sugerencia</option>
+                </select>
+                <label for="nombre-usuario">Nombre de Usuario</label>
+                <input type="text" id="nombre-usuario" name="nombre-usuario" required>
+                <label for="tipo-documento">Tipo de Documento</label>
+                <select id="tipo-documento" name="tipo-documento" required>
+                    <option value="CC">Cédula de Ciudadanía</option>
+                    <option value="TI">Tarjeta de Identidad</option>
+                    <option value="CE">Cédula de Extranjería</option>
+                    <option value="PP">Pasaporte</option>
+                </select>
+                <label for="documento">Documento</label>
+                <input type="text" id="documento" name="documento" required>
+                <label for="hechos">Hechos</label>
+                <textarea id="hechos" name="hechos" rows="4" required></textarea>
+                <button type="submit">Generar Nueva PQRS</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
